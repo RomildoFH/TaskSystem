@@ -9,5 +9,6 @@ namespace TaskSystem.Repositories.Interfaces
         Task<UserModel> Add(UserModel user);
         Task<UserModel> Update(UserModel user, int id);
         Task<bool> Delete(int id);
+        Task<IEnumerable<UserModel>> NameContaing(string name);
     }
 }
